@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Rakshak</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="./images/logo.png" alt="Team Rakshak Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Team Rakshak</h1>
+    <p>Empowering Innovation with Technology</p>
+    <a href="#projects" class="btn">Explore Our Projects</a>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about">
+    <h2>About Team Rakshak</h2>
+    <p>We are a team of engineers passionate about innovation and technology.</p>
+    <p>Our mission is to revolutionize the world of electronics and robotics through cutting-edge solutions.</p>
+  </section>
+
+  <!-- Image Slider Section -->
+  <section class="image-slider">
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <div class="slider-container">
+      <!-- Images will be loaded here dynamically -->
+    </div>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Our Projects</h2>
+    <div class="project-card">
+      <h3>UAV Video 1</h3>
+      <video width="100%" controls>
+        <source src="./images/Ares UAV Promo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Video showcasing the UAV in action.</p>
+    </div>
+  
+  
+  
+    <!-- Add Video 2 -->
+    <div class="project-card">
+      <h3>UAV Video 2</h3>
+      <video width="100%" controls>
+        <source src="./images/vid2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Another video showcasing the UAV features.</p>
+    </div>
+
+    <!-- Add Video 2 -->
+    <div class="project-card">
+      <h3>UAV Video 2</h3>
+      <video width="100%" controls>
+        <source src="./images/vid3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Another video showcasing the UAV features</p>
+    </div>
+  
+    <!-- Add more projects as needed -->
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Team Rakshak</p>
+    <div class="social-media">
+      <a href="https://instagram.com/rakshakiitb" target="_blank">Instagram</a>
+      <a href="https://twitter.com/rakshakiitb" target="_blank">Twitter</a>
+    </div>
+  </footer>
+
+ 
+  <script src="script.js"></script> 
+</body>
+</html>

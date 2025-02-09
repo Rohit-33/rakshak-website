@@ -1,0 +1,268 @@
+/* Global styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./images/logo.png'); 
+    background-size: cover; 
+    background-position: center center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+/* Logo Styles */
+.logo img {
+  width: 100px; /* Adjust the size of the logo as needed */
+  height: auto;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: center; /* Centers the content in the header */
+  align-items: center; /* Vertically centers logo and nav */
+  background-color: #007BFF;
+  padding: 10px 20px;
+  position: relative;
+}
+
+header .logo {
+  position: absolute;  /* Position logo to the left */
+  left: 20px;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  flex-grow: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 20px; /* Space between menu items */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: Space between the logo and navigation */
+header .logo {
+  margin-right: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('./images/logo.png');
+  background-size: cover;
+  color: rgb(60, 23, 225);
+  text-align: center;
+  padding: 150px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero p {
+  font-size: 1.5em;
+}
+
+.hero .btn {
+  background-color: #007BFF;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* About Section */
+.about {
+  text-align: center;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.about h2 {
+  font-size: 2em;
+}
+
+/* Image Slider Section */
+.image-slider {
+  position: relative;
+  width: 60%; 
+  margin: 50px auto;
+  overflow: hidden; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.slider-container {
+  display: flex; 
+  transition: transform 1s ease; 
+}
+
+.slider-container img {
+  width: 50%; 
+  height: 300px; 
+  object-fit: cover; 
+  flex-shrink: 0; 
+  border-radius: 10px; 
+  margin: 0 10px; 
+}
+
+/* Navigation Buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2em;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%; 
+}
+
+.prev {
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+}
+
+/* Projects Section */
+.projects {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-media a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  padding: 50px;
+  background-color: #fff;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-form h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr; /* Stack projects vertically on smaller screens */
+  }
+
+  .hero {
+    padding: 100px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+  }
+}
